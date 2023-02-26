@@ -1,0 +1,5 @@
+name: ExampleModule
+version: 1.0
+author: Fullpage
+# This is the class that will be loaded when the module is loaded
+main: me.fullpage.bot.example.ModuleMain
