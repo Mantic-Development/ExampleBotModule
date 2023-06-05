@@ -37,7 +37,7 @@ public class ExampleCommand implements ISlashCommand {
 
         Option user = event.getOption("user"); // Get the user option
         if (user != null) { // Checks if it's been provided as an argument
-            event.reply("Hello " + user.getAsUser().getAsTag() + "!").queue();
+            event.reply("Hello " + user.getAsUser().getName() + "!").queue();
             return;
         }
 

@@ -16,7 +16,7 @@ public class ExampleListener extends ListenerAdapter {
     @Override
     public void onGuildMemberJoin(GuildMemberJoinEvent event) {
         Member member = event.getMember();
-        module.getLogger().info(member.getUser().getAsTag() + " joined " + member.getGuild().getName());
+        module.getLogger().info(member.getUser().getName() + " joined " + member.getGuild().getName());
     }
 
 }
