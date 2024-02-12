@@ -32,4 +32,9 @@ public class ModuleMain extends Module {
 
 
     }
+
+    @Override
+    public void onReload() {
+        config.load();
+    }
 }
